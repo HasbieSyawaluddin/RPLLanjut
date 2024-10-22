@@ -1,0 +1,16 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/notesdb</property> <!-- Pastikan nama database benar -->
+        <property name="hibernate.connection.username">root</property> <!-- Sesuaikan dengan user XAMPP -->
+        <property name="hibernate.connection.password">Adamfarid@212</property>
+
+        <!-- Dialect untuk MySQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Debugging SQL -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+    </session-factory>
+</hibernate-configuration>
